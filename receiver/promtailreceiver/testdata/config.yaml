@@ -1,0 +1,32 @@
+receivers:
+  promtail:
+    config:
+      positions:
+        filename: /tmp/positions.yaml
+      scrape_configs:
+        ## Uncomment to read logs from /var/log
+        - job_name: system
+          static_configs:
+            #            - targets: [ localhost ]
+            - labels:
+                job: varlogs
+                __path__: /var/log/*log
+
+processors:
+  nop:
+
+exporters:
+  nop:
+#  loki:
+#    endpoint: "https://185971:eyJrIjoiZDdmZWEzNzZiNjYxYjBjNWVkNWRkZmQ0ZWViNmYyNjg5Y2QxZTYzNyIsIm4iOiJpcmluYW1hcmNodWsiLCJpZCI6NjE5NzIzfQ==@logs-prod-eu-west-0.grafana.net/loki/api/v1/push"
+#    tenant_id: "example"
+#    labels:
+#      attributes:
+#        log.file.name: "filename"
+
+service:
+  pipelines:
+    logs:
+      receivers: [ promtail ]
+      processors: [ nop ]
+      exporters: [ nop ]
