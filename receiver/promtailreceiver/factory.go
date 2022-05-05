@@ -18,6 +18,7 @@ import (
 	"context"
 
 	"go.opentelemetry.io/collector/component"
+	"go.opentelemetry.io/collector/component/componenterror"
 	"go.opentelemetry.io/collector/config"
 	"go.opentelemetry.io/collector/consumer"
 )
@@ -27,7 +28,7 @@ const (
 	typeStr = "promtail"
 )
 
-// NewFactory return a new component.ReceiverFactory for fluentd forwarder.
+// NewFactory return a new component.ReceiverFactory for promtail receiver.
 func NewFactory() component.ReceiverFactory {
 	return component.NewReceiverFactory(
 		typeStr,
@@ -48,6 +49,9 @@ func createLogsReceiver(
 	cfg config.Receiver,
 	consumer consumer.Logs,
 ) (component.LogsReceiver, error) {
+	if consumer == nil {
+		return nil, componenterror.ErrNilNextConsumer
+	}
 
 	rCfg := cfg.(*Config)
 	return newPromtailReceiver(params.Logger, rCfg, consumer)

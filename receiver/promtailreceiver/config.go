@@ -16,9 +16,9 @@ package promtailreceiver // import "github.com/open-telemetry/opentelemetry-coll
 import (
 	"fmt"
 
-	"github.com/grafana/loki/clients/pkg/promtail/positions"
-	"github.com/grafana/loki/clients/pkg/promtail/scrapeconfig"
-	"github.com/grafana/loki/clients/pkg/promtail/targets/file"
+	"github.com/mar4uk/loki/clients/pkg/promtail/positions"
+	"github.com/mar4uk/loki/clients/pkg/promtail/scrapeconfig"
+	"github.com/mar4uk/loki/clients/pkg/promtail/targets/file"
 	"go.opentelemetry.io/collector/config"
 	"gopkg.in/yaml.v2"
 )
@@ -30,10 +30,8 @@ const (
 
 type Config struct {
 	config.ReceiverSettings `mapstructure:",squash"` // squash ensures fields are correctly decoded in embedded struct
-	ListenAddress           string `mapstructure:"endpoint"`
-
-	PromtailConfig    *PromtailConfig `mapstructure:"-"`
-	ConfigPlaceholder interface{}     `mapstructure:"config"`
+	PromtailConfig          *PromtailConfig `mapstructure:"-"`
+	ConfigPlaceholder       interface{}     `mapstructure:"config"`
 }
 
 type PromtailConfig struct {

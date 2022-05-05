@@ -17,12 +17,6 @@ processors:
 
 exporters:
   nop:
-#  loki:
-#    endpoint: "https://185971:eyJrIjoiZDdmZWEzNzZiNjYxYjBjNWVkNWRkZmQ0ZWViNmYyNjg5Y2QxZTYzNyIsIm4iOiJpcmluYW1hcmNodWsiLCJpZCI6NjE5NzIzfQ==@logs-prod-eu-west-0.grafana.net/loki/api/v1/push"
-#    tenant_id: "example"
-#    labels:
-#      attributes:
-#        log.file.name: "filename"
 
 service:
   pipelines:
