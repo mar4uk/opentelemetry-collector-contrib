@@ -114,6 +114,7 @@ require (
 	github.com/open-telemetry/opentelemetry-collector-contrib/receiver/postgresqlreceiver v0.50.0
 	github.com/open-telemetry/opentelemetry-collector-contrib/receiver/prometheusexecreceiver v0.50.0
 	github.com/open-telemetry/opentelemetry-collector-contrib/receiver/prometheusreceiver v0.50.0
+	github.com/open-telemetry/opentelemetry-collector-contrib/receiver/promtailreceiver v0.0.0-00010101000000-000000000000
 	github.com/open-telemetry/opentelemetry-collector-contrib/receiver/rabbitmqreceiver v0.50.0
 	github.com/open-telemetry/opentelemetry-collector-contrib/receiver/receivercreator v0.50.0
 	github.com/open-telemetry/opentelemetry-collector-contrib/receiver/redisreceiver v0.50.0
@@ -133,7 +134,7 @@ require (
 	github.com/open-telemetry/opentelemetry-collector-contrib/receiver/windowsperfcountersreceiver v0.50.0
 	github.com/open-telemetry/opentelemetry-collector-contrib/receiver/zipkinreceiver v0.50.0
 	github.com/open-telemetry/opentelemetry-collector-contrib/receiver/zookeeperreceiver v0.50.0
-	github.com/prometheus/prometheus v0.35.1-0.20220503184552-2381d7be5731
+	github.com/prometheus/prometheus v1.8.2-0.20220303173753-edfe657b5405
 	github.com/stretchr/testify v1.7.1
 	go.opentelemetry.io/collector v0.50.1-0.20220429151328-041f39835df7
 	go.uber.org/multierr v1.8.0
@@ -274,7 +275,7 @@ require (
 	github.com/googleapis/gnostic v0.5.6 // indirect
 	github.com/gophercloud/gophercloud v0.24.0 // indirect
 	github.com/gorilla/mux v1.8.0 // indirect
-	github.com/grafana/regexp v0.0.0-20220304095617-2e8d9baf4ac2 // indirect
+	github.com/grafana/regexp v0.0.0-20220304100321-149c8afcd6cb // indirect
 	github.com/grobie/gomemcache v0.0.0-20180201122607-1f779c573665 // indirect
 	github.com/grpc-ecosystem/grpc-gateway v1.16.0 // indirect
 	github.com/hashicorp/consul/api v1.12.0 // indirect
@@ -795,6 +796,8 @@ replace github.com/open-telemetry/opentelemetry-collector-contrib/receiver/prome
 
 replace github.com/open-telemetry/opentelemetry-collector-contrib/receiver/prometheusreceiver => ./receiver/prometheusreceiver
 
+replace github.com/open-telemetry/opentelemetry-collector-contrib/receiver/promtailreceiver => ./receiver/promtailreceiver
+
 replace github.com/open-telemetry/opentelemetry-collector-contrib/receiver/rabbitmqreceiver => ./receiver/rabbitmqreceiver
 
 replace github.com/open-telemetry/opentelemetry-collector-contrib/receiver/receivercreator => ./receiver/receivercreator
@@ -847,3 +850,17 @@ retract v0.37.0 // Contains dependencies on v0.36.0 components, which should hav
 
 // see https://github.com/distribution/distribution/issues/3590
 exclude github.com/docker/distribution v2.8.0+incompatible
+
+replace github.com/open-telemetry/opentelemetry-log-collection => github.com/mar4uk/opentelemetry-log-collection v0.29.2-0.20220507094403-5f6c998a9d36
+
+replace k8s.io/client-go => k8s.io/client-go v0.23.6
+
+replace k8s.io/apimachinery => k8s.io/apimachinery v0.23.6
+
+replace k8s.io/api => k8s.io/api v0.23.6
+
+exclude k8s.io/client-go v12.0.0+incompatible
+
+replace github.com/prometheus/prometheus => github.com/prometheus/prometheus v0.35.1-0.20220503184552-2381d7be5731
+
+//replace github.com/weaveworks/common => github.com/weaveworks/common v0.0.0-20220428113342-f83ccc76d823

@@ -208,6 +208,9 @@ func TestDefaultReceivers(t *testing.T) {
 			skipLifecyle: true, // Requires running a subproccess that can not be easily set across platforms
 		},
 		{
+			receiver: "promtail",
+		},
+		{
 			receiver: "rabbitmq",
 		},
 		{
