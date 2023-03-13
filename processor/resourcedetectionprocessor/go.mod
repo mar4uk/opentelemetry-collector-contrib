@@ -9,10 +9,10 @@ require (
 	github.com/hashicorp/consul/api v1.18.0
 	github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/ecsutil v0.70.0
 	github.com/open-telemetry/opentelemetry-collector-contrib/internal/metadataproviders v0.70.0
-	github.com/stretchr/testify v1.8.1
+	github.com/stretchr/testify v1.8.2
 	go.opentelemetry.io/collector v0.70.1-0.20230207214007-faf5a578038f
 	go.opentelemetry.io/collector/component v0.70.1-0.20230207214007-faf5a578038f
-	go.opentelemetry.io/collector/confmap v0.70.1-0.20230207214007-faf5a578038f
+	go.opentelemetry.io/collector/confmap v0.73.0
 	go.opentelemetry.io/collector/consumer v0.70.1-0.20230207214007-faf5a578038f
 	go.opentelemetry.io/collector/pdata v1.0.0-rc4.0.20230207214007-faf5a578038f
 	go.opentelemetry.io/collector/semconv v0.70.1-0.20230207214007-faf5a578038f
@@ -78,7 +78,7 @@ require (
 	github.com/rs/cors v1.8.3 // indirect
 	github.com/stretchr/objx v0.5.0 // indirect
 	go.opencensus.io v0.24.0 // indirect
-	go.opentelemetry.io/collector/featuregate v0.70.1-0.20230207214007-faf5a578038f // indirect
+	go.opentelemetry.io/collector/featuregate v0.73.0 // indirect
 	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp v0.38.0 // indirect
 	go.opentelemetry.io/otel v1.13.0 // indirect
 	go.opentelemetry.io/otel/metric v0.36.0 // indirect
