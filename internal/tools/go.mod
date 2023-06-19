@@ -10,7 +10,7 @@ require (
 	github.com/jcchavezs/porto v0.4.0
 	github.com/jstemmer/go-junit-report v1.0.0
 	github.com/tcnksm/ghr v0.16.0
-	go.opentelemetry.io/build-tools/checkdoc v0.5.0
+	go.opentelemetry.io/build-tools/checkdoc v0.8.0
 	go.opentelemetry.io/build-tools/chloggen v0.5.0
 	go.opentelemetry.io/build-tools/crosslink v0.5.0
 	go.opentelemetry.io/build-tools/issuegenerator v0.5.0
@@ -180,7 +180,7 @@ require (
 	github.com/ssgreg/nlreturn/v2 v2.2.1 // indirect
 	github.com/stbenjam/no-sprintf-host-port v0.1.1 // indirect
 	github.com/stretchr/objx v0.5.0 // indirect
-	github.com/stretchr/testify v1.8.1 // indirect
+	github.com/stretchr/testify v1.8.4 // indirect
 	github.com/subosito/gotenv v1.4.1 // indirect
 	github.com/t-yuki/gocover-cobertura v0.0.0-20180217150009-aaee18c8195c // indirect
 	github.com/tcnksm/go-gitconfig v0.1.2 // indirect
