@@ -9,12 +9,12 @@ require (
 	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatatest v0.70.0
 	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza v0.70.0
 	github.com/relvacode/iso8601 v1.3.0
-	github.com/stretchr/testify v1.8.1
+	github.com/stretchr/testify v1.8.4
 	go.opentelemetry.io/collector v0.70.1-0.20230207214007-faf5a578038f
 	go.opentelemetry.io/collector/component v0.70.1-0.20230207214007-faf5a578038f
 	go.opentelemetry.io/collector/consumer v0.70.1-0.20230207214007-faf5a578038f
 	go.opentelemetry.io/collector/pdata v1.0.0-rc4.0.20230207214007-faf5a578038f
-	go.opentelemetry.io/collector/semconv v0.70.1-0.20230207214007-faf5a578038f
+	go.opentelemetry.io/collector/semconv v0.96.0
 	go.uber.org/zap v1.24.0
 )
 
@@ -48,7 +48,6 @@ require (
 	github.com/inconshreveable/mousetrap v1.0.1 // indirect
 	github.com/jpillora/backoff v1.0.0 // indirect
 	github.com/knadh/koanf v1.5.0 // indirect
-	github.com/kr/pretty v0.3.0 // indirect
 	github.com/lufia/plan9stats v0.0.0-20211012122336-39d0f177ccd0 // indirect
 	github.com/matttproud/golang_protobuf_extensions v1.0.4 // indirect
 	github.com/mitchellh/copystructure v1.2.0 // indirect
