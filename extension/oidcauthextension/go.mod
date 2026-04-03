@@ -1,6 +1,6 @@
 module github.com/open-telemetry/opentelemetry-collector-contrib/extension/oidcauthextension
 
-go 1.23.0
+go 1.24.0
 
 require (
 	github.com/coreos/go-oidc/v3 v3.13.0
@@ -18,7 +18,7 @@ require (
 
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
-	github.com/go-jose/go-jose/v4 v4.0.5 // indirect
+	github.com/go-jose/go-jose/v4 v4.1.4 // indirect
 	github.com/go-logr/logr v1.4.2 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/go-viper/mapstructure/v2 v2.2.1 // indirect
@@ -43,7 +43,6 @@ require (
 	go.opentelemetry.io/otel/sdk/metric v1.35.0 // indirect
 	go.opentelemetry.io/otel/trace v1.35.0 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
-	golang.org/x/crypto v0.36.0 // indirect
 	golang.org/x/net v0.37.0 // indirect
 	golang.org/x/oauth2 v0.28.0 // indirect
 	golang.org/x/sys v0.31.0 // indirect
