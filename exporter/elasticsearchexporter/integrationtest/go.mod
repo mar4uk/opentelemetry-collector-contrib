@@ -1,6 +1,6 @@
 module github.com/open-telemetry/opentelemetry-collector-contrib/exporter/elasticsearchexporter/integrationtest
 
-go 1.23.7
+go 1.25.0
 
 require (
 	github.com/elastic/go-docappender/v2 v2.6.1
@@ -11,7 +11,7 @@ require (
 	github.com/open-telemetry/opentelemetry-collector-contrib/internal/sharedcomponent v0.123.0
 	github.com/open-telemetry/opentelemetry-collector-contrib/testbed v0.123.0
 	github.com/shirou/gopsutil/v4 v4.25.3
-	github.com/stretchr/testify v1.10.0
+	github.com/stretchr/testify v1.11.1
 	go.opentelemetry.io/collector/component v1.29.1-0.20250402200755-cb5c3f4fb9dc
 	go.opentelemetry.io/collector/component/componentstatus v0.123.1-0.20250402200755-cb5c3f4fb9dc
 	go.opentelemetry.io/collector/component/componenttest v0.123.1-0.20250402200755-cb5c3f4fb9dc
@@ -30,7 +30,7 @@ require (
 	go.opentelemetry.io/collector/receiver/otlpreceiver v0.123.1-0.20250402200755-cb5c3f4fb9dc
 	go.opentelemetry.io/collector/receiver/receivertest v0.123.1-0.20250402200755-cb5c3f4fb9dc
 	go.uber.org/zap v1.27.0
-	golang.org/x/sync v0.12.0
+	golang.org/x/sync v0.20.0
 )
 
 require (
@@ -44,7 +44,7 @@ require (
 	github.com/cenkalti/backoff/v5 v5.0.2 // indirect
 	github.com/census-instrumentation/opencensus-proto v0.4.1 // indirect
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
-	github.com/cilium/ebpf v0.16.0 // indirect
+	github.com/cilium/ebpf v0.22.0 // indirect
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
 	github.com/ebitengine/purego v0.8.2 // indirect
 	github.com/elastic/elastic-transport-go/v8 v8.6.1 // indirect
@@ -127,10 +127,10 @@ require (
 	github.com/prometheus/common v0.62.0 // indirect
 	github.com/prometheus/procfs v0.15.1 // indirect
 	github.com/rs/cors v1.11.1 // indirect
-	github.com/sirupsen/logrus v1.9.3 // indirect
+	github.com/sirupsen/logrus v1.9.4 // indirect
 	github.com/soheilhy/cmux v0.1.5 // indirect
-	github.com/spf13/cobra v1.9.1 // indirect
-	github.com/spf13/pflag v1.0.6 // indirect
+	github.com/spf13/cobra v1.10.2 // indirect
+	github.com/spf13/pflag v1.0.10 // indirect
 	github.com/tklauser/go-sysconf v0.3.14 // indirect
 	github.com/tklauser/numcpus v0.8.0 // indirect
 	github.com/twmb/murmur3 v1.1.8 // indirect
@@ -221,9 +221,9 @@ require (
 	go.opentelemetry.io/proto/otlp v1.5.0 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
 	golang.org/x/exp v0.0.0-20250210185358-939b2ce775ac // indirect
-	golang.org/x/net v0.38.0 // indirect
-	golang.org/x/sys v0.31.0 // indirect
-	golang.org/x/text v0.23.0 // indirect
+	golang.org/x/net v0.48.0 // indirect
+	golang.org/x/sys v0.43.0 // indirect
+	golang.org/x/text v0.32.0 // indirect
 	gonum.org/v1/gonum v0.16.0 // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20250303144028-a0af3efb3deb // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20250303144028-a0af3efb3deb // indirect
