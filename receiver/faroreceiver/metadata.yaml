@@ -8,7 +8,7 @@ description: |
 status:
   class: receiver
   stability:
-    alpha: [logs, traces]
+    beta: [logs, traces]
   distributions:
     - contrib
   codeowners:
